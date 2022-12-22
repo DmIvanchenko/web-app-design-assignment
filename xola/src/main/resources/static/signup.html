@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form>
+        <label>First name:</label>
+        <input type="firstname" required v-model="firstname">
+
+        <label>Last name:</label>
+        <input type="lastname" required v-model="lastname">
+
+        <label>Email:</label>
+        <input type="email" required v-model="email">
+
+        <label>Password:</label>
+        <input type="password" required v-model="password">
+        <div v-if="passwordError" class="error">{{passwordError}}</div>
+        <div class="submit">
+            <button>Create an account</button>
+        </div>
+    </form>
+</body>
+</html>
